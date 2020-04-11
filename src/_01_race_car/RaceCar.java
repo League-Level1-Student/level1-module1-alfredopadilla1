@@ -1,21 +1,11 @@
 package _01_race_car;
-/*
- *    Copyright (c) The League of Amazing Programmers 2013-2019
- *    Level 1
- */
-
-
 
 public class RaceCar {
 	private String brand;
 	private int positionInRace;
 	public boolean damaged = false;
 	
-	/**
-	 * 
-	 * @param brand Brand of race car
-	 * @param positionInRace Position of race car in the race
-	 */
+	
 	public RaceCar(String brand, int positionInRace) {
 		System.out.println("Your " +brand +" race car has been created.");
 		if (positionInRace <= 0)

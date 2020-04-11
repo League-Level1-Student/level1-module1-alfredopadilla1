@@ -35,7 +35,7 @@ public class IntrotoJUnitTets {
 
 	private static Object add(int i, int j) {
 
-		return Math.addExact(i, j);
+		return i + j ;
 		
 	}
 }
