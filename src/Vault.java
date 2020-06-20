@@ -1,6 +1,6 @@
 public class Vault {
 	
-	private int secretCode;
+	public int secretCode;
 
 	public boolean tryCode(int number) {
 
@@ -12,19 +12,10 @@ public class Vault {
 		}
 	}
 
-	public Vault(int secretCode) {
+	public Vault(int number) {
 
-		this.secretCode = secretCode;
+		this.secretCode = number;
 
-	}
-
-	public static void main(String[] args) {
-		int secretCode = 5;
-		Vault vault = new Vault(secretCode);
-		if (vault.tryCode(3)) {
-			System.out.println("Error");
-			
-		}
 	}
 
 }
