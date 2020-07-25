@@ -22,7 +22,7 @@ public class BinaryConverter implements ActionListener{
 		frame.setVisible(true);
 		frame.setSize(400, 400);
 
-	}
+	} 
 
 	public String convert(String input) {
 
