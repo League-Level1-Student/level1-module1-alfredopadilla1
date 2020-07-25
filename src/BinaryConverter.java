@@ -6,8 +6,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class BinaryConverter {
-
+public class BinaryConverter implements ActionListener{
+	
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 	JTextField textfield = new JTextField(20);
@@ -17,10 +17,10 @@ public class BinaryConverter {
 		panel.add(textfield);
 		panel.add(button);
 
-		button.addActionListener((ActionListener) this);
+		button.addActionListener(this);
 		frame.add(panel);
 		frame.setVisible(true);
-		frame.setSize(200, 200);
+		frame.setSize(400, 400);
 
 	}
 
@@ -30,7 +30,7 @@ public class BinaryConverter {
 			JOptionPane.showMessageDialog(null, "Binary can only contain 1s or 0s, silly!!!");
 			return "-";
 		}
-		String binary = "[0-1]+"; // must contain numbers in the given range
+		String binary = "[0-1]+"; 
 		if (!input.matches(binary)) {
 			JOptionPane.showMessageDialog(null, "Binary can only contain 1s or 0s, silly!!!");
 			return "-";
